@@ -1,8 +1,38 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+      <!--Links to other pages-->
+    <a href="index.html">Home</a> |
+    <a href="registration.html">Registration</a> |
+    <a href="categories.html">Categories</a> 
 
-    </head>
-    <body>
-        <h2>Login page</h2>
-    </body>
+    <h1>Login Page</h1>
+
+    <h3>
+        Not Registered? <a href="registration.html">Register Here</a>
+    </h3>
+
+    <h4>
+        Welcome to the Login Page! Please enter your credentials to access your account.
+    </h4>
+
+    <form action="#" method="POST">
+        <p>
+            <label for="userId">User ID: </label><br/>
+            <input type="text" id="userId" name="userId">
+        </p>
+
+        <p>
+            <label for="password">Password: </label><br/>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <p>
+            <input type="submit" value="Login">
+        </p>
+    </form>
+</body>
 </html>
