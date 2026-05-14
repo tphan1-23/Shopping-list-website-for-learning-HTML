@@ -1,83 +1,147 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Registration Page</title>
-</head>
-<body>
-    <nav>
-            <a href="index.html">Home</a> |
-            <a href="login.html">Login</a> |
-            <a href="categories.html">Categories</a>
-    </nav>
-   
-    <h1>
-        Register Yourself
-    </h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register with Us</title>
+        <!-- Link to CSS files -->
+        <link rel="stylesheet" href="css/color-scheme.css" />
+        <link rel="stylesheet" href="css/form-styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="https://placehold.co/100x100" alt="Logo" />
+                <a href="index.html">Home</a> |
+                <a href="registration.html">Registration</a> |
+                <a href="login.html">Login</a> |
+                <a href="categories.html">Categories</a> |
+                <a href="shopping-list.html">Shopping List</a> |
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </header>
 
-    <h3>
-        Already Registered? <a href="login.html">Login Here</a>
-    </h3>
-    
-        <form action = "#" method = "POST">
+        <section>
+            <h1>Register with Us</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter Username"
+                        required />
+                </div>
 
-        <p>
-        <label for = "name">Enter Your Name: </label><br/>
-        <input type = "text" id = "name">
-        </p>
-        
-        <p>
-            <label for="Male">Male: </label>
-            <input type="radio" id="Male" name="gender" value="Male"><br/>
-            <label for="Female">Female: </label>
-            <input type="radio" id="Female" name="gender" value="Female">
-        </p>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password"
+                        required />
+                </div>
 
-        <p>
-            <label for="userId">Enter Your UserID: </label><br/>
-            <input type="text" id="userId">
-        </p>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Confirm Password"
+                        required />
+                </div>
 
-        <p>
-        <label for="password">Enter Your Password: </label><br/>
-        <input type="password" id="password">
-        </p>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Email"
+                        required />
+                </div>
 
-        <p>
-        <label for="email">Enter Your Email: </label><br/>
-        <input type="email" id="email">
-        </p>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" />
+                </div>
 
-        <p>
-            <label for="address">Enter Your Address: </label><br/>
-            <textarea id="address" name="address" rows="5" cols="30"></textarea>
-        </p>
-    
-        <p>
-            <h4>Shopping Interests</h4>
-            <input type="checkbox" id="ele" name="electronics" value="electronics">
-            <label for="ele">Electronics</label><br/>
-            <input type="checkbox" id="fashion" name="fashion" value="Fashion">
-            <label for="fashion">Fashion</label><br/>
-            <input type="checkbox" id="books" name="books" value="Books">
-            <label for="books">Books</label>
-        </p>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                        class="inline-input" />
+                    <label for="male" class="inline-label">Male</label>
 
-        <p>
-            <label for="category">Select the Category</label>
-            <select id="category" name="category">
-                <option value="Premium">Premium</option>
-                <option value="Regular">Regular</option>
-            </select>
-        </p>
+                    <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                        class="inline-input" />
+                    <label for="female" class="inline-label">Female</label>
 
-        <p>
-        <input type="submit" value="Submit">
-        </p> 
-</form>
+                    <input
+                        type="radio"
+                        id="other"
+                        name="gender"
+                        value="other"
+                        class="inline-input" />
+                    <label for="other" class="inline-label">Other</label>
+                </div>
 
-<footer>
-    &copy; All rights reserved
-</footer>
+                <div class="form-group">
+                    <label for="hobbies">Hobbies:</label>
+                    <input
+                        type="checkbox"
+                        id="sports"
+                        name="hobbies"
+                        value="sports"
+                        class="inline-input" />
+                    <label for="sports" class="inline-label">Sports</label>
 
-</body>
+                    <input
+                        type="checkbox"
+                        id="music"
+                        name="hobbies"
+                        value="music"
+                        class="inline-input" />
+                    <label for="music" class="inline-label">Music</label>
+
+                    <input
+                        type="checkbox"
+                        id="travel"
+                        name="hobbies"
+                        value="travel"
+                        class="inline-input" />
+                    <label for="travel" class="inline-label">Travel</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="USA">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; A.J.S.D Java Developer, 2150</p>
+        </footer>
+    </body>
 </html>
