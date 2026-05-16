@@ -32,7 +32,9 @@ textarea {
     /* Rounded corners */
     box-sizing: border-box;
 
-    background-color: #f0f8ff;
+     /* TODO 2 - add a light gray background color with #f3f3f3 color code */
+     background-color: #f3f3f3;
+    /* Light background color */
     font-size: 16px;
 }
 
@@ -71,7 +73,7 @@ button {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 5px;
     /* Rounded corners */
     cursor: pointer;
     font-size: 16px;

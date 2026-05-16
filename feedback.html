@@ -5,10 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Feedback Form</title>
         <link rel="stylesheet" href="css/color-scheme.css" />
+        <link rel="stylesheet" href="css/feedback.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <style>
+
+        </style>
+
     </head>
 
+    <!--
     <head>
-         <!-- TODO 7 - Add an internal <style> block and insert the required button styles.  -->
             <style type="text/css">
             .submit-button {
                 background-color: #28a745;
@@ -38,11 +45,9 @@
             }
             </style>
     </head>
+     -->
 
-
-
-
-            
+     
     <body>
         <header>
             <nav>
@@ -63,58 +68,28 @@
             <section>
                 <h1>Feedback form to report issue</h1>
 
-                <form action="#" method="POST">
+                 <form action="#" method="POST" class="flex-container">
                     <label for="username">Username:</label>
-                    <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        value="Value" /><br /><br />
-
+                    <input type="text" id="username" name="username" value="Value" />
+                
                     <label for="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value="Value" /><br /><br />
-
+                    <input type="password" id="password" name="password" value="Value" />
+                
                     <label for="contact-method">Contact me using:</label>
                     <select id="contact-method" name="contact-method">
                         <option value="phone">Phone</option>
-                        <option value="email">Email</option></select
-                    ><br /><br />
-
-                    <label for="phone">Phone Number:</label>
-                    <input
-                        type="text"
-                        id="phone"
-                        name="phone"
-                        placeholder="Placeholder" /><br /><br />
-
-                    <label for="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Placeholder" /><br /><br />
-
+                        <option value="email">Email</option>
+                    </select>
+                
                     <label for="comments">Comments:</label>
-                    <textarea
-                        id="comments"
-                        name="comments"
-                        rows="5"
-                        cols="30"></textarea
-                    ><br /><br />
-
-                    <label for="screenshot">Screenshot of issue:</label>
-                    <input
-                        type="file"
-                        id="screenshot"
-                        name="screenshot" /><br /><br />
-
-                      <button type="submit" class="submit-button">Send</button>
-                    <button type="reset" class="reset-button">Clear</button>
+                    <textarea id="comments" name="comments" rows="5"></textarea>
+                
+                    <div class="button-container">
+                        <button type="submit" class="submit-button">Send</button>
+                        <button type="reset" class="reset-button">Clear</button>
+                    </div>
                 </form>
+                
             </section>
         </main>
 

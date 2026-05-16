@@ -56,22 +56,28 @@ th {
     /* text-align: left; */
 }
 
-
 td {
+       /* TODO 3: Add 10px of space inside each table cell */
     padding: 10px;
     border: 1px solid #ddd;
 }
 
-
 th {
-    background-color: #0056b3;  
-    padding: 12px 15px;      
+    background-color: #0056b3;
+    padding: 12px 15px;
 
+    /* TODO 4 - Add white text for better contrast */
     color: white;
+
+    /* TODO 5 - Align header text to the left */
     text-align: left;
+
+    /* TODO 6 - Make the text bold */
     font-weight: bold;
+
     border-bottom: 2px solid #ddd;
-    }
+}
+
 
 
 /* Alternating Row Colors */
@@ -111,16 +117,4 @@ tr:nth-child(odd) {
     background-color: #ffd700;
     /* Golden Yellow */
     color: #333333;
-}
-
-/* Footer Section */
-footer {
-    background-color: #0056b3;
-    /* Dark Blue */
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
